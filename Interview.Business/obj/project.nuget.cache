@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oyM2tmFmbvdwkTgFzTOHq2spnGBGgfWka9TJS6TSzb0K6m/zHeNmcyFXIDjQmr9wTG2WYeQ9j1/S5kmw1EpQPQ==",
+  "success": true,
+  "projectFilePath": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj",
+  "expectedPackageFiles": [
+    "/Users/chris.nattress/.nuget/packages/progleasing.system.logging.contract/6.0.8/progleasing.system.logging.contract.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

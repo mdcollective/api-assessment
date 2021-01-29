@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ProgLeasing.System.Logging.Contract/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ProgLeasing.System.Logging.Contract.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ProgLeasing.System.Logging.Contract.dll": {}
+        }
+      },
+      "Interview.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Interview.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interview.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProgLeasing.System.Logging.Contract/6.0.8": {
+      "sha512": "vw74Z8PywP6oYwy/2t+IGHkQwc4w5W/y7Crp3DwMpRtkg5fTjpXH6RKDu+D+3IxCy6s6LQ0a0Deuz732CodD/w==",
+      "type": "package",
+      "path": "progleasing.system.logging.contract/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netstandard2.0/ProgLeasing.System.Logging.Contract.dll",
+        "lib/netstandard2.0/ProgLeasing.System.Logging.Contract.pdb",
+        "progleasing.system.logging.contract.6.0.8.nupkg.sha512",
+        "progleasing.system.logging.contract.nuspec"
+      ]
+    },
+    "Interview.Model/1.0.0": {
+      "type": "project",
+      "path": "../Interview.Model/Interview.Model.csproj",
+      "msbuildProject": "../Interview.Model/Interview.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Interview.Model >= 1.0.0",
+      "ProgLeasing.System.Logging.Contract >= 6.0.8"
+    ]
+  },
+  "packageFolders": {
+    "/Users/chris.nattress/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj",
+      "projectName": "Interview.Business",
+      "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj",
+      "packagesPath": "/Users/chris.nattress/.nuget/packages/",
+      "outputPath": "/Users/chris.nattress/Github/Interview/Interview.Business/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/chris.nattress/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "http://proget.stormwind.local/nuget/devpkg/": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-prerelease": {},
+        "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-release": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj": {
+              "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "ProgLeasing.System.Logging.Contract": {
+            "target": "Package",
+            "version": "[6.0.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

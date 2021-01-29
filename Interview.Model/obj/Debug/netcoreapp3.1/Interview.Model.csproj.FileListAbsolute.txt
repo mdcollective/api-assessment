@@ -1,0 +1,8 @@
+/Users/chris.nattress/Github/Interview/Interview.Model/bin/Debug/netcoreapp3.1/Interview.Model.deps.json
+/Users/chris.nattress/Github/Interview/Interview.Model/bin/Debug/netcoreapp3.1/Interview.Model.dll
+/Users/chris.nattress/Github/Interview/Interview.Model/bin/Debug/netcoreapp3.1/Interview.Model.pdb
+/Users/chris.nattress/Github/Interview/Interview.Model/obj/Debug/netcoreapp3.1/Interview.Model.AssemblyInfoInputs.cache
+/Users/chris.nattress/Github/Interview/Interview.Model/obj/Debug/netcoreapp3.1/Interview.Model.AssemblyInfo.cs
+/Users/chris.nattress/Github/Interview/Interview.Model/obj/Debug/netcoreapp3.1/Interview.Model.csproj.CoreCompileInputs.cache
+/Users/chris.nattress/Github/Interview/Interview.Model/obj/Debug/netcoreapp3.1/Interview.Model.dll
+/Users/chris.nattress/Github/Interview/Interview.Model/obj/Debug/netcoreapp3.1/Interview.Model.pdb

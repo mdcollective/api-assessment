@@ -1,0 +1,320 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/chris.nattress/Github/Interview/Interview.Tests/Interview.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj",
+        "projectName": "Interview.Business",
+        "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj",
+        "packagesPath": "/Users/chris.nattress/.nuget/packages/",
+        "outputPath": "/Users/chris.nattress/Github/Interview/Interview.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chris.nattress/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://proget.stormwind.local/nuget/devpkg/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-prerelease": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-release": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj": {
+                "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "ProgLeasing.System.Logging.Contract": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj",
+        "projectName": "Interview.Model",
+        "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj",
+        "packagesPath": "/Users/chris.nattress/.nuget/packages/",
+        "outputPath": "/Users/chris.nattress/Github/Interview/Interview.Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chris.nattress/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://proget.stormwind.local/nuget/devpkg/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-prerelease": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-release": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chris.nattress/Github/Interview/Interview.Tests/Interview.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chris.nattress/Github/Interview/Interview.Tests/Interview.Tests.csproj",
+        "projectName": "Interview.Tests",
+        "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Tests/Interview.Tests.csproj",
+        "packagesPath": "/Users/chris.nattress/.nuget/packages/",
+        "outputPath": "/Users/chris.nattress/Github/Interview/Interview.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chris.nattress/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://proget.stormwind.local/nuget/devpkg/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-prerelease": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-release": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/chris.nattress/Github/Interview/Interview/Interview.csproj": {
+                "projectPath": "/Users/chris.nattress/Github/Interview/Interview/Interview.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/chris.nattress/Github/Interview/Interview/Interview.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/chris.nattress/Github/Interview/Interview/Interview.csproj",
+        "projectName": "Interview",
+        "projectPath": "/Users/chris.nattress/Github/Interview/Interview/Interview.csproj",
+        "packagesPath": "/Users/chris.nattress/.nuget/packages/",
+        "outputPath": "/Users/chris.nattress/Github/Interview/Interview/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/chris.nattress/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://proget.stormwind.local/nuget/devpkg/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-prerelease": {},
+          "https://art.proginternal.net/artifactory/api/nuget/v3/nuget-release": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj": {
+                "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Business/Interview.Business.csproj"
+              },
+              "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj": {
+                "projectPath": "/Users/chris.nattress/Github/Interview/Interview.Model/Interview.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AspNetCore.HealthChecks.Publisher.ApplicationInsights": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "AspNetCore.HealthChecks.Uris": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            },
+            "ProgLeasing.System.FeatureFlag.Contract": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
+            "ProgLeasing.System.FeatureFlag.LaunchDarkly.Core": {
+              "target": "Package",
+              "version": "[1.0.16, )"
+            },
+            "ProgLeasing.System.Logging.Contract": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "ProgLeasing.System.Logging.Correlator": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "ProgLeasing.System.Logging.Serilog": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
