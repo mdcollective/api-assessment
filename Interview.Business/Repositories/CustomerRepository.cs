@@ -50,5 +50,15 @@ namespace Interview.Business.Repositories
         {
             return _customers;
         }
+
+        /// <summary>
+        /// Adds a new customer.
+        /// </summary>
+        /// <param name="customer">New customer to add.</param>
+        /// <returns>Added customer.</returns>
+        public Customer AddCustomer(Customer customer)
+        {
+            return customer;
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Interview.Business.Services;
-using System;
 using Microsoft.AspNetCore.Http;
+using Interview.Model.Types;
 
 namespace Interview.Controllers
 {
@@ -50,6 +50,29 @@ namespace Interview.Controllers
             try
             {
                 return Ok(_customerService.GetCustomers());
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+        }
+
+        /// <summary>
+        /// Adds a new customer.
+        /// </summary>
+        /// <param name="customer">New customer to add.</param>
+        /// <returns>Added customer.</returns>
+        [HttpPost("customers")]
+        public IActionResult Post(Customer customer)
+        {
+            try
+            {
+                var addCustomer = _customerService.AddCustomer(customer);
+
+                if (customer != null)
+                    return StatusCode(StatusCodes.Status201Created);
+                else
+                    return StatusCode(StatusCodes.Status400BadRequest);
             }
             catch
             {

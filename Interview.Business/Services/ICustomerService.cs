@@ -20,5 +20,12 @@ namespace Interview.Business.Services
         /// </summary>
         /// <returns>List of all customers.</returns>
         public List<Customer> GetCustomers();
+
+        /// <summary>
+        /// Adds a new customer.
+        /// </summary>
+        /// <param name="customer">New customer to add.</param>
+        /// <returns>Added customer.</returns>
+        public Customer AddCustomer(Customer customer);
     }
 }
