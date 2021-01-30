@@ -3,8 +3,16 @@ using Interview.Model.Types;
 
 namespace Interview.Business.Repositories
 {
+    /// <summary>
+    /// Manages customers.
+    /// </summary>
     public class CustomerRepository : ICustomerRepository
     {
+        /// <summary>
+        /// Retrieves a single customer with the provided customer id.
+        /// </summary>
+        /// <param name="id">Customer unique identifier.</param>
+        /// <returns>Single customer object.</returns>
         public Customer GetCustomer(string id)
         {
             return new Customer

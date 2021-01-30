@@ -1,24 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Interview.Model.Types;
 using Microsoft.AspNetCore.Http;
+using Interview.Business.Services;
 
 namespace Interview.Controllers
 {
+    /// <summary>
+    /// Manages customers.
+    /// </summary>
     [Route("api")]
     [ApiController]
     public class CustomersController : ControllerBase
     {
-        [HttpGet]
-        [Swashbuckle.AspNetCore.Annotations.SwaggerResponse(StatusCodes.Status200OK, "the Customer", typeof(Customer))]
+        private readonly ICustomerService _customerService;
+
+        public CustomersController(ICustomerService customerService) => _customerService = customerService;
+
+        /// <summary>
+        /// Retrieves a single customer with the provided customer id.
+        /// </summary>
+        /// <param name="id">Customer unique identifier.</param>
+        /// <returns>Single customer object.</returns>
+        [HttpGet("customers/{id}")]
         public IActionResult Get(string id)
         {
-            return null;
+            return Ok(_customerService.GetCustomer(id));
         }
 
-        [HttpGet]
-        public IActionResult GetCustomers()
-        {
-            return null;
-        }
+        // public IActionResult Get()
+        // {
+        //     return null;
+        // }
     }
 }
