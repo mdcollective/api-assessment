@@ -29,7 +29,7 @@ namespace Interview.Business.Tests
         }
 
         [Test]
-        public void GetCustomers_WithCustomerId_ReturnsCustomer()
+        public void GetCustomer_WithCustomerId_ReturnsCustomer()
         {
             // Arrange
             var id = "1";
@@ -40,6 +40,18 @@ namespace Interview.Business.Tests
             // Assert
             Assert.IsNotNull(customer);
             Assert.IsInstanceOf<Customer>(customer);
+        }
+
+        [Test]
+        public void GetCustomers_WithNoParams_ReturnsCustomers()
+        {
+            // Arrange
+            // Act
+            var customers = _customerService.GetCustomers();
+
+            // Assert
+            Assert.IsNotNull(customers);
+            Assert.IsTrue(customers.Count > 1);
         }
     }
 }
