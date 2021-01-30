@@ -22,7 +22,12 @@ namespace Interview.Controllers
         [HttpGet("customers/{id}")]
         public IActionResult Get(string id)
         {
-            return Ok(_customerService.GetCustomer(id));
+            var customer = _customerService.GetCustomer(id);
+
+            if (customer != null)
+                return Ok(_customerService.GetCustomer(id));
+            else
+                return NotFound();
         }
 
         /// <summary>
