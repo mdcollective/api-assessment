@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Interview.Business.Services;
+using System;
+using Microsoft.AspNetCore.Http;
 
 namespace Interview.Controllers
 {
@@ -22,12 +24,20 @@ namespace Interview.Controllers
         [HttpGet("customers/{id}")]
         public IActionResult Get(string id)
         {
-            var customer = _customerService.GetCustomer(id);
+            try
+            {
+                var customer = _customerService.GetCustomer(id);
 
-            if (customer != null)
-                return Ok(_customerService.GetCustomer(id));
-            else
-                return NotFound();
+                if (customer != null)
+                    return Ok(_customerService.GetCustomer(id));
+                else
+                    return NotFound();
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+            
         }
 
         /// <summary>
@@ -37,7 +47,14 @@ namespace Interview.Controllers
         [HttpGet("customers")]
         public IActionResult Get()
         {
-            return Ok(_customerService.GetCustomers());
+            try
+            {
+                return Ok(_customerService.GetCustomers());
+            }
+            catch
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }
