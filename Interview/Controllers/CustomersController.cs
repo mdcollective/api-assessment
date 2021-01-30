@@ -67,6 +67,13 @@ namespace Interview.Controllers
         {
             try
             {
+                var isDuplicateCustomer = _customerService.GetCustomers(_ =>
+                    _.FirstName.ToLower() == customer.FirstName.ToLower() &&
+                    _.LastName.ToLower() == customer.LastName.ToLower());
+
+                if (isDuplicateCustomer.Count > 0)
+                    return StatusCode(StatusCodes.Status400BadRequest);
+
                 var addCustomer = _customerService.AddCustomer(customer);
 
                 if (customer != null)

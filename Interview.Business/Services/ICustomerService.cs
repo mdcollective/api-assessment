@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Interview.Model.Types;
 
 namespace Interview.Business.Services
@@ -20,6 +21,13 @@ namespace Interview.Business.Services
         /// </summary>
         /// <returns>List of all customers.</returns>
         public List<Customer> GetCustomers();
+
+        /// <summary>
+        /// Retrieves customers with the provided filter.
+        /// </summary>
+        /// <param name="filter">Filter to apply.</param>
+        /// <returns>Results of customer filter.</returns>
+        public List<Customer> GetCustomers(Func<Customer, bool> filter);
 
         /// <summary>
         /// Adds a new customer.

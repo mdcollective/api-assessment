@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Interview.Business.Repositories;
 using Interview.Model.Types;
 
@@ -30,6 +32,16 @@ namespace Interview.Business.Services
         public List<Customer> GetCustomers()
         {
             return _customerRepository.GetCustomers();
+        }
+
+        /// <summary>
+        /// Retrieves customers with the provided filter.
+        /// </summary>
+        /// <param name="filter">Filter to apply.</param>
+        /// <returns>Results of customer filter.</returns>
+        public List<Customer> GetCustomers(Func<Customer, bool> filter)
+        {
+            return _customerRepository.GetCustomers().Where(filter).ToList();
         }
 
         /// <summary>
