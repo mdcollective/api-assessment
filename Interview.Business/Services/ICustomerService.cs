@@ -1,4 +1,5 @@
-﻿using Interview.Model.Types;
+﻿using System.Collections.Generic;
+using Interview.Model.Types;
 
 namespace Interview.Business.Services
 {
@@ -13,5 +14,11 @@ namespace Interview.Business.Services
         /// <param name="id">Customer unique identifier.</param>
         /// <returns>Single customer object.</returns>
         public Customer GetCustomer(string id);
+
+        /// <summary>
+        /// Retrieves all customers.
+        /// </summary>
+        /// <returns>List of all customers.</returns>
+        public List<Customer> GetCustomers();
     }
 }

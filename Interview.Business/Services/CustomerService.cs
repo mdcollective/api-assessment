@@ -1,4 +1,5 @@
-﻿using Interview.Business.Repositories;
+﻿using System.Collections.Generic;
+using Interview.Business.Repositories;
 using Interview.Model.Types;
 
 namespace Interview.Business.Services
@@ -20,6 +21,15 @@ namespace Interview.Business.Services
         public Customer GetCustomer(string id)
         {
             return _customerRepository.GetCustomer(id);
+        }
+
+        /// <summary>
+        /// Retrieves all customers.
+        /// </summary>
+        /// <returns>List of all customers.</returns>
+        public List<Customer> GetCustomers()
+        {
+            return _customerRepository.GetCustomers();
         }
     }
 }

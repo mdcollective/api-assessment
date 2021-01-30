@@ -15,6 +15,10 @@ namespace Interview.Business.Repositories
         /// <returns>Single customer object.</returns>
         Customer GetCustomer(string id);
 
+        /// <summary>
+        /// Retrieves all customers.
+        /// </summary>
+        /// <returns>List of all customers.</returns>
         List<Customer> GetCustomers();
     }
 }

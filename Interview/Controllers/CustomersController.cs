@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Interview.Model.Types;
-using Microsoft.AspNetCore.Http;
 using Interview.Business.Services;
 
 namespace Interview.Controllers
@@ -27,9 +25,14 @@ namespace Interview.Controllers
             return Ok(_customerService.GetCustomer(id));
         }
 
-        // public IActionResult Get()
-        // {
-        //     return null;
-        // }
+        /// <summary>
+        /// Retrieves all customers.
+        /// </summary>
+        /// <returns>List of all customers.</returns>
+        [HttpGet("customers")]
+        public IActionResult Get()
+        {
+            return Ok(_customerService.GetCustomers());
+        }
     }
 }

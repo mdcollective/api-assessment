@@ -25,6 +25,10 @@ namespace Interview.Business.Repositories
             };
         }
 
+        /// <summary>
+        /// Retrieves all customers.
+        /// </summary>
+        /// <returns>List of all customers.</returns>
         public List<Customer> GetCustomers()
         {
             return new List<Customer>
