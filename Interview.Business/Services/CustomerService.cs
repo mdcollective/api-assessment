@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Interview.Business.Repositories;
 using Interview.Model.Types;
 
@@ -20,9 +21,9 @@ namespace Interview.Business.Services
         /// </summary>
         /// <param name="id">Customer unique identifier.</param>
         /// <returns>Single customer object.</returns>
-        public Customer GetCustomer(string id)
+        public async Task<Customer> GetCustomer(string id)
         {
-            return _customerRepository.GetCustomer(id);
+            return await _customerRepository.GetCustomer(id);
         }
 
         /// <summary>

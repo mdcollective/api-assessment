@@ -1,4 +1,5 @@
-﻿using Interview.Business.Repositories;
+﻿using System.Threading.Tasks;
+using Interview.Business.Repositories;
 using Interview.Business.Services;
 using Interview.Model.Types;
 using Moq;
@@ -16,14 +17,14 @@ namespace Interview.Business.Tests
         {
             var mockCustomerRepository = new Mock<ICustomerRepository>();
 
-            mockCustomerRepository.Setup(_ => _.GetCustomer(It.IsAny<string>())).Returns(new Customer
+            mockCustomerRepository.Setup(_ => _.GetCustomer(It.IsAny<string>())).Returns(Task.FromResult(new Customer
             {
                 Age = 30,
                 FirstName = "John",
                 Gender = "M",
                 Id = "1",
                 LastName = "Doe"
-            });
+            }));
 
             _customerService = new CustomerService(mockCustomerRepository.Object);
         }
@@ -35,7 +36,7 @@ namespace Interview.Business.Tests
             var id = "1";
 
             // Act
-            var customer = _customerService.GetCustomer(id);
+            var customer = _customerService.GetCustomer(id).Result;
 
             // Assert
             Assert.IsNotNull(customer);

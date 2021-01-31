@@ -2,6 +2,7 @@
 using Interview.Business.Services;
 using Microsoft.AspNetCore.Http;
 using Interview.Model.Types;
+using System.Threading.Tasks;
 
 namespace Interview.Controllers
 {
@@ -22,14 +23,14 @@ namespace Interview.Controllers
         /// <param name="id">Customer unique identifier.</param>
         /// <returns>Single customer object.</returns>
         [HttpGet("customers/{id}")]
-        public IActionResult Get(string id)
+        public async Task<IActionResult> Get(string id)
         {
             try
             {
-                var customer = _customerService.GetCustomer(id);
+                var customer =  await _customerService.GetCustomer(id);
 
                 if (customer != null)
-                    return Ok(_customerService.GetCustomer(id));
+                    return Ok(customer);
                 else
                     return NotFound();
             }

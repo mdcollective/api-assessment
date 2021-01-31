@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Interview.Model.Types;
 
 namespace Interview.Business.Repositories
@@ -13,7 +14,7 @@ namespace Interview.Business.Repositories
         /// </summary>
         /// <param name="id">Customer unique identifier.</param>
         /// <returns>Single customer object.</returns>
-        Customer GetCustomer(string id);
+        Task<Customer> GetCustomer(string id);
 
         /// <summary>
         /// Retrieves all customers.
@@ -26,6 +27,6 @@ namespace Interview.Business.Repositories
         /// </summary>
         /// <param name="customer">New customer to add.</param>
         /// <returns>Added customer.</returns>
-        public Customer AddCustomer(Customer customer);
+        Customer AddCustomer(Customer customer);
     }
 }

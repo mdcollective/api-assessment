@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Interview.Model.Types;
 
 namespace Interview.Business.Repositories
@@ -37,9 +38,11 @@ namespace Interview.Business.Repositories
         /// </summary>
         /// <param name="id">Customer unique identifier.</param>
         /// <returns>Single customer object.</returns>
-        public Customer GetCustomer(string id)
+        public async Task<Customer> GetCustomer(string id)
         {
-            return _customers.FirstOrDefault(_ => _.Id == id);
+            return await Task<Customer>
+                .Factory
+                .StartNew(() => _customers.FirstOrDefault(_ => _.Id == id));
         }
 
         /// <summary>
