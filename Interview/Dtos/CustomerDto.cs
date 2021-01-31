@@ -1,10 +1,15 @@
-﻿namespace Interview.Model.Types
+﻿namespace Interview.Dtos
 {
     /// <summary>
-    /// Customer domain object.
+    /// Customer dto object to return from controller.
     /// </summary>
-    public class Customer
+    public class CustomerDto
     {
+        /// <summary>
+        /// Full name of customer in the form of 'FirstName' 'LastName'.
+        /// </summary>
+        public string FullName { get; set; }
+
         /// <summary>
         /// Age of customer.
         /// </summary>

@@ -3,6 +3,7 @@ using Interview.Business.Services;
 using Microsoft.AspNetCore.Http;
 using Interview.Model.Types;
 using System.Threading.Tasks;
+using Interview.Extensions;
 
 namespace Interview.Controllers
 {
@@ -30,7 +31,7 @@ namespace Interview.Controllers
                 var customer =  await _customerService.GetCustomer(id);
 
                 if (customer != null)
-                    return Ok(customer);
+                    return Ok(customer.ToCustomerDto());
                 else
                     return NotFound();
             }
@@ -50,7 +51,7 @@ namespace Interview.Controllers
         {
             try
             {
-                return Ok(_customerService.GetCustomers());
+                return Ok(_customerService.GetCustomers().ToCustomersDto());
             }
             catch
             {

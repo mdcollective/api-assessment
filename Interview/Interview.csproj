@@ -32,4 +32,8 @@
     <ProjectReference Include="..\Interview.Model\Interview.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
 </Project>
